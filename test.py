@@ -22,7 +22,7 @@ from ddqn_agent import DDQNAgent
 from discrete_pendulum import make_pendulum
 
 # Weights & Biases project name
-PROJECT = "cmps458_assignment2"
+PROJECT = "RL_ASSIGNMENT2_TEST"
 
 # ============================================================================
 # ENVIRONMENT CREATION
@@ -124,8 +124,11 @@ def test_agent(env_id, AgentClass, model_path, num_episodes=100, num_recordings=
     )
 
     # Run test episodes
+    test_start_time = datetime.now()
     all_returns = []
+    all_episode_times = []
     for ep in range(1, num_episodes + 1):
+        episode_start_time = datetime.now()
         obs, _ = env.reset()
         done = False
         ep_return = 0.0
@@ -142,20 +145,33 @@ def test_agent(env_id, AgentClass, model_path, num_episodes=100, num_recordings=
             ep_return += reward
             obs = next_obs
 
+        episode_duration = (datetime.now() - episode_start_time).total_seconds()
         all_returns.append(ep_return)
-        wandb.log({"episode": ep, "return": ep_return})
+        all_episode_times.append(episode_duration)
+        wandb.log({"episode": ep, "return": ep_return, "episode_time": episode_duration})
 
         # Progress logging every 10 episodes
         if ep % 10 == 0:
-            print(f"[{AgentClass.__name__} | {env_id}] Episode {ep}/{num_episodes} avg_return={np.mean(all_returns[-10:]):.2f}")
+            avg_time = np.mean(all_episode_times[-10:])
+            print(f"[{AgentClass.__name__} | {env_id}] Episode {ep}/{num_episodes} avg_return={np.mean(all_returns[-10:]):.2f} avg_time={avg_time:.2f}s")
 
     # Compute and log final statistics
+    test_duration = (datetime.now() - test_start_time).total_seconds()
     avg_return = np.mean(all_returns)
+    avg_episode_time = np.mean(all_episode_times)
+    total_episode_time = np.sum(all_episode_times)
+    
     wandb.summary["avg_return"] = avg_return
     wandb.summary["num_recorded_episodes"] = num_recordings
+    wandb.summary["test_duration"] = test_duration
+    wandb.summary["avg_episode_time"] = avg_episode_time
+    wandb.summary["total_episode_time"] = total_episode_time
 
-    print(f"\n[{AgentClass.__name__} | {env_id}] Test completed. Avg return: {avg_return:.2f}")
-    print(f"Videos saved in: {video_folder}")
+    print(f"\n[{AgentClass.__name__} | {env_id}] Test completed.")
+    print(f"  Avg return: {avg_return:.2f}")
+    print(f"  Test duration: {test_duration:.2f}s")
+    print(f"  Avg episode time: {avg_episode_time:.3f}s")
+    print(f"  Videos saved in: {video_folder}")
 
     env.close()
     run.finish()

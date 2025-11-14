@@ -1,0 +1,5 @@
+  [ 50] Avg: -557.90 | Loss: 1.2993 | Eps: 0.028 | Q_std: 0.614
+  [100] Avg: -348.54 | Loss: 0.1038 | Eps: 0.010 | Q_std: 0.189
+
+  SUCCESS at episode 118 | Mean Reward (last 100): -195.53
+  Model saved: models\DDQNAgent\Pendulum-v1.pth

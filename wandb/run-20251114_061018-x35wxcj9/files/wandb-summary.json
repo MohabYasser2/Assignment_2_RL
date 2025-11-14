@@ -1,0 +1,1 @@
+{"_runtime":10,"_timestamp":1.7630934296471198e+09,"test_duration":10.501445,"episode":100,"_wandb":{"runtime":10},"return":-115.1836490893841,"avg_episode_time":0.10449795000000002,"_step":99,"avg_return":-149.72287029608097,"total_episode_time":10.449795000000002,"episode_time":0.051942,"num_recorded_episodes":5}

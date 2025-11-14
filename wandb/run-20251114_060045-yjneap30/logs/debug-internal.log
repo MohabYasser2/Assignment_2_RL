@@ -1,0 +1,12 @@
+{"time":"2025-11-14T06:00:45.6123549+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-14T06:00:45.9849711+02:00","level":"INFO","msg":"stream: created new stream","id":"yjneap30"}
+{"time":"2025-11-14T06:00:45.9849711+02:00","level":"INFO","msg":"handler: started","stream_id":"yjneap30"}
+{"time":"2025-11-14T06:00:45.9866303+02:00","level":"INFO","msg":"stream: started","id":"yjneap30"}
+{"time":"2025-11-14T06:00:45.9866303+02:00","level":"INFO","msg":"writer: started","stream_id":"yjneap30"}
+{"time":"2025-11-14T06:00:45.9866303+02:00","level":"INFO","msg":"sender: started","stream_id":"yjneap30"}
+{"time":"2025-11-14T06:00:52.587971+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T06:00:52.906827+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-11-14T06:00:52.9102204+02:00","level":"INFO","msg":"stream: closing","id":"yjneap30"}
+{"time":"2025-11-14T06:00:52.9102204+02:00","level":"INFO","msg":"handler: closed","stream_id":"yjneap30"}
+{"time":"2025-11-14T06:00:52.9107163+02:00","level":"INFO","msg":"sender: closed","stream_id":"yjneap30"}
+{"time":"2025-11-14T06:00:52.9107163+02:00","level":"INFO","msg":"stream: closed","id":"yjneap30"}

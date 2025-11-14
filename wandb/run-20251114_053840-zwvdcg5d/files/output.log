@@ -1,0 +1,9 @@
+  [ 50] Avg:  45.84 | Loss: 0.0876 | Eps: 0.325 | Q_std: 0.283
+  [100] Avg: 140.31 | Loss: 0.1442 | Eps: 0.011 | Q_std: 0.227
+  [150] Avg: 181.31 | Loss: 0.0375 | Eps: 0.010 | Q_std: 0.125
+  [200] Avg: 136.00 | Loss: 0.0090 | Eps: 0.010 | Q_std: 0.091 [WARNING: Q-collapse!]
+  [250] Avg: 194.17 | Loss: 0.0498 | Eps: 0.010 | Q_std: 0.086 [WARNING: Q-collapse!]
+  [300] Avg: 364.18 | Loss: 0.1870 | Eps: 0.010 | Q_std: 0.029 [WARNING: Q-collapse!]
+
+  SUCCESS at episode 346 | Mean Reward (last 100): 475.86
+  Model saved: models\DQNAgent\CartPole-v1.pth

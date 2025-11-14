@@ -1,14 +1,57 @@
-Training started at 2025-11-14 04:30:47.716903
+Training started at 2025-11-14 05:38:37.582035
 
-[DDQNAgent | Acrobot-v1] ep=50 avg100=-220.72 loss=0.2140 epsilon=0.154 q_std=0.523
-[DDQNAgent | Acrobot-v1] ep=100 avg100=-178.19 loss=0.4764 epsilon=0.076 q_std=0.832
-[DDQNAgent | Acrobot-v1] ep=150 avg100=-122.88 loss=0.3794 epsilon=0.059 q_std=7.121
-[DDQNAgent | Acrobot-v1] ep=200 avg100=-108.45 loss=0.6833 epsilon=0.053 q_std=4.895
+[DQNAgent | CartPole-v1] ep=50 mean_reward_100=45.84 loss=0.0876 epsilon=0.325 q_std=0.283
+[DQNAgent | CartPole-v1] ep=100 mean_reward_100=140.31 loss=0.1442 epsilon=0.011 q_std=0.227
+[DQNAgent | CartPole-v1] ep=150 mean_reward_100=181.31 loss=0.0375 epsilon=0.010 q_std=0.125
+[DQNAgent | CartPole-v1] ep=200 mean_reward_100=136.00 loss=0.0090 epsilon=0.010 q_std=0.091
+[DQNAgent | CartPole-v1] ep=250 mean_reward_100=194.17 loss=0.0498 epsilon=0.010 q_std=0.086
+[DQNAgent | CartPole-v1] ep=300 mean_reward_100=364.18 loss=0.1870 epsilon=0.010 q_std=0.029
+[DQNAgent | CartPole-v1] success achieved at ep=346. model saved to models\DQNAgent\CartPole-v1.pth
+DQNAgent on CartPole-v1: success=True, episodes=346, mean_reward_100=475.86, model_path=models\DQNAgent\CartPole-v1.pth
+[DQNAgent | Acrobot-v1] ep=50 mean_reward_100=-199.88 loss=0.1678 epsilon=0.178 q_std=0.422
+[DQNAgent | Acrobot-v1] ep=100 mean_reward_100=-156.29 loss=0.3195 epsilon=0.091 q_std=1.213
+[DQNAgent | Acrobot-v1] ep=150 mean_reward_100=-110.47 loss=0.3074 epsilon=0.064 q_std=1.611
+[DQNAgent | Acrobot-v1] success achieved at ep=181. model saved to models\DQNAgent\Acrobot-v1.pth
+DQNAgent on Acrobot-v1: success=True, episodes=181, mean_reward_100=-99.57, model_path=models\DQNAgent\Acrobot-v1.pth
+[DQNAgent | MountainCar-v0] ep=50 mean_reward_100=-156.46 loss=0.1308 epsilon=0.030 q_std=0.215
+[DQNAgent | MountainCar-v0] ep=100 mean_reward_100=-122.60 loss=0.0327 epsilon=0.011 q_std=0.553
+[DQNAgent | MountainCar-v0] success achieved at ep=113. model saved to models\DQNAgent\MountainCar-v0.pth
+DQNAgent on MountainCar-v0: success=True, episodes=113, mean_reward_100=-109.89578247070312, model_path=models\DQNAgent\MountainCar-v0.pth
+[DQNAgent | Pendulum-v1] ep=50 mean_reward_100=-504.47 loss=1.0942 epsilon=0.028 q_std=0.149
+[DQNAgent | Pendulum-v1] ep=100 mean_reward_100=-322.53 loss=0.0895 epsilon=0.010 q_std=0.411
+[DQNAgent | Pendulum-v1] success achieved at ep=112. model saved to models\DQNAgent\Pendulum-v1.pth
+DQNAgent on Pendulum-v1: success=True, episodes=112, mean_reward_100=-192.5375132027666, model_path=models\DQNAgent\Pendulum-v1.pth
+[DDQNAgent | CartPole-v1] ep=50 mean_reward_100=31.90 loss=0.0687 epsilon=0.456 q_std=0.923
+[DDQNAgent | CartPole-v1] ep=100 mean_reward_100=118.22 loss=0.1338 epsilon=0.013 q_std=1.451
+[DDQNAgent | CartPole-v1] ep=150 mean_reward_100=187.13 loss=0.0238 epsilon=0.010 q_std=0.124
+[DDQNAgent | CartPole-v1] ep=200 mean_reward_100=307.67 loss=0.1293 epsilon=0.010 q_std=0.051
+[DDQNAgent | CartPole-v1] ep=250 mean_reward_100=462.33 loss=0.2086 epsilon=0.010 q_std=0.098
+[DDQNAgent | CartPole-v1] success achieved at ep=254. model saved to models\DDQNAgent\CartPole-v1.pth
+DDQNAgent on CartPole-v1: success=True, episodes=254, mean_reward_100=475.01, model_path=models\DDQNAgent\CartPole-v1.pth
+[DDQNAgent | Acrobot-v1] ep=50 mean_reward_100=-220.72 loss=0.2140 epsilon=0.154 q_std=0.523
+[DDQNAgent | Acrobot-v1] ep=100 mean_reward_100=-178.19 loss=0.4764 epsilon=0.076 q_std=0.832
+[DDQNAgent | Acrobot-v1] ep=150 mean_reward_100=-122.88 loss=0.3794 epsilon=0.059 q_std=7.121
+[DDQNAgent | Acrobot-v1] ep=200 mean_reward_100=-108.45 loss=0.6833 epsilon=0.053 q_std=4.895
 [DDQNAgent | Acrobot-v1] success achieved at ep=248. model saved to models\DDQNAgent\Acrobot-v1.pth
-DDQNAgent on Acrobot-v1: success=True, episodes=248, avg100=-99.96, model_path=models\DDQNAgent\Acrobot-v1.pth
+DDQNAgent on Acrobot-v1: success=True, episodes=248, mean_reward_100=-99.96, model_path=models\DDQNAgent\Acrobot-v1.pth
+[DDQNAgent | MountainCar-v0] ep=50 mean_reward_100=-149.42 loss=0.1301 epsilon=0.033 q_std=0.217
+[DDQNAgent | MountainCar-v0] ep=100 mean_reward_100=-118.64 loss=0.0541 epsilon=0.011 q_std=0.150
+[DDQNAgent | MountainCar-v0] success achieved at ep=108. model saved to models\DDQNAgent\MountainCar-v0.pth
+DDQNAgent on MountainCar-v0: success=True, episodes=108, mean_reward_100=-109.98481750488281, model_path=models\DDQNAgent\MountainCar-v0.pth
+[DDQNAgent | Pendulum-v1] ep=50 mean_reward_100=-557.90 loss=1.2993 epsilon=0.028 q_std=0.614
+[DDQNAgent | Pendulum-v1] ep=100 mean_reward_100=-348.54 loss=0.1038 epsilon=0.010 q_std=0.189
+[DDQNAgent | Pendulum-v1] success achieved at ep=118. model saved to models\DDQNAgent\Pendulum-v1.pth
+DDQNAgent on Pendulum-v1: success=True, episodes=118, mean_reward_100=-195.53334176735996, model_path=models\DDQNAgent\Pendulum-v1.pth
 
 Final Training Summary:
-DDQNAgent on Acrobot-v1: success=True, episodes=248, avg100=-99.96, model_path=models\DDQNAgent\Acrobot-v1.pth
+DQNAgent on CartPole-v1: success=True, episodes=346, mean_reward_100=475.86, model_path=models\DQNAgent\CartPole-v1.pth
+DQNAgent on Acrobot-v1: success=True, episodes=181, mean_reward_100=-99.57, model_path=models\DQNAgent\Acrobot-v1.pth
+DQNAgent on MountainCar-v0: success=True, episodes=113, mean_reward_100=-109.89578247070312, model_path=models\DQNAgent\MountainCar-v0.pth
+DQNAgent on Pendulum-v1: success=True, episodes=112, mean_reward_100=-192.5375132027666, model_path=models\DQNAgent\Pendulum-v1.pth
+DDQNAgent on CartPole-v1: success=True, episodes=254, mean_reward_100=475.01, model_path=models\DDQNAgent\CartPole-v1.pth
+DDQNAgent on Acrobot-v1: success=True, episodes=248, mean_reward_100=-99.96, model_path=models\DDQNAgent\Acrobot-v1.pth
+DDQNAgent on MountainCar-v0: success=True, episodes=108, mean_reward_100=-109.98481750488281, model_path=models\DDQNAgent\MountainCar-v0.pth
+DDQNAgent on Pendulum-v1: success=True, episodes=118, mean_reward_100=-195.53334176735996, model_path=models\DDQNAgent\Pendulum-v1.pth
 
-Training completed at 2025-11-14 04:33:09.881244
-Total duration: 0:02:22.164341
+Training completed at 2025-11-14 05:59:42.554513
+Total duration: 0:21:04.972478

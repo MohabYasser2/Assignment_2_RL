@@ -1,0 +1,16 @@
+[DQNAgent | MountainCar-v0] Episode 10/100 avg_return=-143.00 avg_time=0.33s
+[DQNAgent | MountainCar-v0] Episode 20/100 avg_return=-131.60 avg_time=0.02s
+[DQNAgent | MountainCar-v0] Episode 30/100 avg_return=-141.30 avg_time=0.03s
+[DQNAgent | MountainCar-v0] Episode 40/100 avg_return=-110.10 avg_time=0.02s
+[DQNAgent | MountainCar-v0] Episode 50/100 avg_return=-120.50 avg_time=0.02s
+[DQNAgent | MountainCar-v0] Episode 60/100 avg_return=-138.10 avg_time=0.03s
+[DQNAgent | MountainCar-v0] Episode 70/100 avg_return=-142.70 avg_time=0.03s
+[DQNAgent | MountainCar-v0] Episode 80/100 avg_return=-129.90 avg_time=0.02s
+[DQNAgent | MountainCar-v0] Episode 90/100 avg_return=-130.90 avg_time=0.02s
+[DQNAgent | MountainCar-v0] Episode 100/100 avg_return=-142.00 avg_time=0.03s
+
+[DQNAgent | MountainCar-v0] Test completed.
+  Avg return: -133.01
+  Test duration: 5.54s
+  Avg episode time: 0.055s
+  Videos saved in: videos\DQNAgent_MountainCar-v0

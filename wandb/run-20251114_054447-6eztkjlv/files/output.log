@@ -1,0 +1,6 @@
+  [ 50] Avg: -199.88 | Loss: 0.1678 | Eps: 0.178 | Q_std: 0.422
+  [100] Avg: -156.29 | Loss: 0.3195 | Eps: 0.091 | Q_std: 1.213
+  [150] Avg: -110.47 | Loss: 0.3074 | Eps: 0.064 | Q_std: 1.611
+
+  SUCCESS at episode 181 | Mean Reward (last 100): -99.57
+  Model saved: models\DQNAgent\Acrobot-v1.pth

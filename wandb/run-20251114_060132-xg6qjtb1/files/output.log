@@ -1,0 +1,13 @@
+[DDQNAgent | Acrobot-v1] Episode 10/100 avg_return=-85.10
+[DDQNAgent | Acrobot-v1] Episode 20/100 avg_return=-91.50
+[DDQNAgent | Acrobot-v1] Episode 30/100 avg_return=-79.10
+[DDQNAgent | Acrobot-v1] Episode 40/100 avg_return=-72.60
+[DDQNAgent | Acrobot-v1] Episode 50/100 avg_return=-88.40
+[DDQNAgent | Acrobot-v1] Episode 60/100 avg_return=-91.10
+[DDQNAgent | Acrobot-v1] Episode 70/100 avg_return=-79.10
+[DDQNAgent | Acrobot-v1] Episode 80/100 avg_return=-68.00
+[DDQNAgent | Acrobot-v1] Episode 90/100 avg_return=-80.20
+[DDQNAgent | Acrobot-v1] Episode 100/100 avg_return=-98.40
+
+[DDQNAgent | Acrobot-v1] Test completed. Avg return: -83.35
+Videos saved in: videos\DDQNAgent_Acrobot-v1

@@ -1,0 +1,7 @@
+  [ 50] Avg: -220.72 | Loss: 0.2140 | Eps: 0.154 | Q_std: 0.523
+  [100] Avg: -178.19 | Loss: 0.4764 | Eps: 0.076 | Q_std: 0.832
+  [150] Avg: -122.88 | Loss: 0.3794 | Eps: 0.059 | Q_std: 7.121
+  [200] Avg: -108.45 | Loss: 0.6833 | Eps: 0.053 | Q_std: 4.895
+
+  SUCCESS at episode 248 | Mean Reward (last 100): -99.96
+  Model saved: models\DDQNAgent\Acrobot-v1.pth
