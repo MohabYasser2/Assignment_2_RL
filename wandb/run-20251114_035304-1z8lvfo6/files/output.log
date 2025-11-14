@@ -1,0 +1,9 @@
+  [ 50] Avg:  45.84 | Loss: 0.0876 | Eps: 0.325
+  [100] Avg: 140.31 | Loss: 0.1442 | Eps: 0.011
+  [150] Avg: 181.31 | Loss: 0.0375 | Eps: 0.010
+  [200] Avg: 136.00 | Loss: 0.0090 | Eps: 0.010
+  [250] Avg: 194.17 | Loss: 0.0498 | Eps: 0.010
+  [300] Avg: 364.18 | Loss: 0.1870 | Eps: 0.010
+
+  SUCCESS at episode 346 | Avg100: 475.86
+  Model saved: models\DQNAgent\CartPole-v1.pth

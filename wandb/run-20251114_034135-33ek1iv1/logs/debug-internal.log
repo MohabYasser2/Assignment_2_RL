@@ -1,0 +1,12 @@
+{"time":"2025-11-14T03:41:37.9663462+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-14T03:41:38.7794115+02:00","level":"INFO","msg":"stream: created new stream","id":"33ek1iv1"}
+{"time":"2025-11-14T03:41:38.7799227+02:00","level":"INFO","msg":"handler: started","stream_id":"33ek1iv1"}
+{"time":"2025-11-14T03:41:38.7871163+02:00","level":"INFO","msg":"stream: started","id":"33ek1iv1"}
+{"time":"2025-11-14T03:41:38.7865178+02:00","level":"INFO","msg":"writer: started","stream_id":"33ek1iv1"}
+{"time":"2025-11-14T03:41:38.7871163+02:00","level":"INFO","msg":"sender: started","stream_id":"33ek1iv1"}
+{"time":"2025-11-14T03:42:08.7985886+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-14T03:42:17.3929476+02:00","level":"INFO","msg":"stream: closing","id":"33ek1iv1"}
+{"time":"2025-11-14T03:42:18.3487988+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T03:42:18.757577+02:00","level":"INFO","msg":"handler: closed","stream_id":"33ek1iv1"}
+{"time":"2025-11-14T03:42:18.757577+02:00","level":"INFO","msg":"sender: closed","stream_id":"33ek1iv1"}
+{"time":"2025-11-14T03:42:18.757577+02:00","level":"INFO","msg":"stream: closed","id":"33ek1iv1"}

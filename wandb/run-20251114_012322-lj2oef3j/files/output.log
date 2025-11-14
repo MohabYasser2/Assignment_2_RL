@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "c:\Users\mohab\Desktop\M\train.py", line 121, in <module>
+    success, episodes, avg100, model_path = train_one(env_id, AgentClass, log_file)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mohab\Desktop\M\train.py", line 90, in train_one
+    wandb.save(model_path, policy="now")
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mohab\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_run.py", line 390, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\mohab\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_run.py", line 448, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\mohab\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_run.py", line 435, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\mohab\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_run.py", line 2124, in save
+    return self._save(
+           ~~~~~~~~~~^
+        resolved_glob_path,
+        ^^^^^^^^^^^^^^^^^^^
+        resolved_base_path,
+        ^^^^^^^^^^^^^^^^^^^
+        policy,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mohab\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\wandb_run.py", line 2183, in _save
+    target_path.symlink_to(source_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Python313\Lib\pathlib\_local.py", line 789, in symlink_to
+    os.symlink(target, self, target_is_directory)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1314] A required privilege is not held by the client: 'c:\\Users\\mohab\\Desktop\\M\\models\\DDQNAgent\\Pendulum-v1.pth' -> 'c:\\Users\\mohab\\Desktop\\M\\wandb\\run-20251114_012322-lj2oef3j\\files\\models\\DDQNAgent\\Pendulum-v1.pth'

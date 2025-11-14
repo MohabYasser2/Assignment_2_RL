@@ -1,0 +1,13 @@
+[DQNAgent | Pendulum-v1] Episode 10/100 avg_return=-142.35
+[DQNAgent | Pendulum-v1] Episode 20/100 avg_return=-146.53
+[DQNAgent | Pendulum-v1] Episode 30/100 avg_return=-159.38
+[DQNAgent | Pendulum-v1] Episode 40/100 avg_return=-148.78
+[DQNAgent | Pendulum-v1] Episode 50/100 avg_return=-107.80
+[DQNAgent | Pendulum-v1] Episode 60/100 avg_return=-121.25
+[DQNAgent | Pendulum-v1] Episode 70/100 avg_return=-203.24
+[DQNAgent | Pendulum-v1] Episode 80/100 avg_return=-157.13
+[DQNAgent | Pendulum-v1] Episode 90/100 avg_return=-164.33
+[DQNAgent | Pendulum-v1] Episode 100/100 avg_return=-122.60
+
+[DQNAgent | Pendulum-v1] Test completed. Avg return: -147.34
+Videos saved in: videos\DQNAgent_Pendulum-v1

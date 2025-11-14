@@ -1,0 +1,12 @@
+{"time":"2025-11-14T03:51:19.2278113+02:00","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-14T03:51:19.5976834+02:00","level":"INFO","msg":"stream: created new stream","id":"ryad45u6"}
+{"time":"2025-11-14T03:51:19.5976834+02:00","level":"INFO","msg":"handler: started","stream_id":"ryad45u6"}
+{"time":"2025-11-14T03:51:19.6017566+02:00","level":"INFO","msg":"stream: started","id":"ryad45u6"}
+{"time":"2025-11-14T03:51:19.6022658+02:00","level":"INFO","msg":"writer: started","stream_id":"ryad45u6"}
+{"time":"2025-11-14T03:51:19.6022658+02:00","level":"INFO","msg":"sender: started","stream_id":"ryad45u6"}
+{"time":"2025-11-14T03:53:03.8039751+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T03:53:04.1351703+02:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-11-14T03:53:04.1381635+02:00","level":"INFO","msg":"stream: closing","id":"ryad45u6"}
+{"time":"2025-11-14T03:53:04.1381635+02:00","level":"INFO","msg":"handler: closed","stream_id":"ryad45u6"}
+{"time":"2025-11-14T03:53:04.1387846+02:00","level":"INFO","msg":"sender: closed","stream_id":"ryad45u6"}
+{"time":"2025-11-14T03:53:04.1387846+02:00","level":"INFO","msg":"stream: closed","id":"ryad45u6"}

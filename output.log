@@ -1,0 +1,14 @@
+Training started at 2025-11-14 04:30:47.716903
+
+[DDQNAgent | Acrobot-v1] ep=50 avg100=-220.72 loss=0.2140 epsilon=0.154 q_std=0.523
+[DDQNAgent | Acrobot-v1] ep=100 avg100=-178.19 loss=0.4764 epsilon=0.076 q_std=0.832
+[DDQNAgent | Acrobot-v1] ep=150 avg100=-122.88 loss=0.3794 epsilon=0.059 q_std=7.121
+[DDQNAgent | Acrobot-v1] ep=200 avg100=-108.45 loss=0.6833 epsilon=0.053 q_std=4.895
+[DDQNAgent | Acrobot-v1] success achieved at ep=248. model saved to models\DDQNAgent\Acrobot-v1.pth
+DDQNAgent on Acrobot-v1: success=True, episodes=248, avg100=-99.96, model_path=models\DDQNAgent\Acrobot-v1.pth
+
+Final Training Summary:
+DDQNAgent on Acrobot-v1: success=True, episodes=248, avg100=-99.96, model_path=models\DDQNAgent\Acrobot-v1.pth
+
+Training completed at 2025-11-14 04:33:09.881244
+Total duration: 0:02:22.164341

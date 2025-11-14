@@ -1,0 +1,1 @@
+{"loss":0.08197662129068123,"total_steps":47456,"avg_episode_time":0.48671608000000005,"_wandb":{"runtime":227},"avg100":97.45,"episode_steps":188,"_timestamp":1.7630797818283868e+09,"return":188,"_runtime":227,"episode_time":0.966202,"success":false,"reward":188,"_step":499,"episodes_trained":500,"epsilon":0.010000000049056407,"episode":500}

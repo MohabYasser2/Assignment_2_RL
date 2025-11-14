@@ -1,0 +1,8 @@
+  [ 50] Avg:  31.90 | Loss: 0.0687 | Eps: 0.456
+  [100] Avg: 118.22 | Loss: 0.1338 | Eps: 0.013
+  [150] Avg: 187.13 | Loss: 0.0238 | Eps: 0.010
+  [200] Avg: 307.67 | Loss: 0.1293 | Eps: 0.010
+  [250] Avg: 462.33 | Loss: 0.2086 | Eps: 0.010
+
+  SUCCESS at episode 254 | Avg100: 475.01
+  Model saved: models\DDQNAgent\CartPole-v1.pth

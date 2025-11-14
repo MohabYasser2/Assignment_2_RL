@@ -1,0 +1,5 @@
+  [ 50] Avg: -504.47 | Loss: 1.0942 | Eps: 0.028
+  [100] Avg: -322.53 | Loss: 0.0895 | Eps: 0.010
+
+  SUCCESS at episode 112 | Avg100: -192.54
+  Model saved: models\DQNAgent\Pendulum-v1.pth

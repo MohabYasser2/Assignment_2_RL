@@ -1,0 +1,13 @@
+[DQNAgent | MountainCar-v0] Episode 10/100 avg_return=-126.20
+[DQNAgent | MountainCar-v0] Episode 20/100 avg_return=-128.70
+[DQNAgent | MountainCar-v0] Episode 30/100 avg_return=-120.80
+[DQNAgent | MountainCar-v0] Episode 40/100 avg_return=-128.90
+[DQNAgent | MountainCar-v0] Episode 50/100 avg_return=-163.10
+[DQNAgent | MountainCar-v0] Episode 60/100 avg_return=-141.30
+[DQNAgent | MountainCar-v0] Episode 70/100 avg_return=-132.50
+[DQNAgent | MountainCar-v0] Episode 80/100 avg_return=-133.90
+[DQNAgent | MountainCar-v0] Episode 90/100 avg_return=-143.20
+[DQNAgent | MountainCar-v0] Episode 100/100 avg_return=-99.90
+
+[DQNAgent | MountainCar-v0] Test completed. Avg return: -131.85
+Videos saved in: videos\DQNAgent_MountainCar-v0

@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "c:\Users\mohab\Desktop\M\train.py", line 292, in <module>
+    success, episodes, avg100, model_path = train_one(env_id, AgentClass, log_file)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\mohab\Desktop\M\train.py", line 196, in train_one
+    print(f"  [{ep:3d}] Avg: {avg100:6.2f} | Loss: {avg_loss:.4f} | ε: {current_epsilon:.3f}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\contextlib.py", line 85, in inner
+    return func(*args, **kwds)
+  File "C:\Users\mohab\AppData\Roaming\Python\Python313\site-packages\wandb\sdk\lib\console_capture.py", line 171, in write_with_callbacks
+    n = orig_write(s)
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u03b5' in position 37: character maps to <undefined>

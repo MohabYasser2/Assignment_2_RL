@@ -1,0 +1,6 @@
+  [ 50] Avg: -177.32 | Loss: 0.1911 | Eps: 0.038
+  [100] Avg: -148.84 | Loss: 0.4454 | Eps: 0.012
+  [150] Avg: -114.00 | Loss: 0.5177 | Eps: 0.010
+
+  SUCCESS at episode 195 | Avg100: -99.62
+  Model saved: models\DQNAgent\Acrobot-v1.pth

@@ -1,0 +1,14 @@
+Wandb initialized. Starting training loop...
+
+Episode 50/500 | Avg100: -557.90 | Return: -236.02 | Steps: 10000
+Episode 100/500 | Avg100: -348.54 | Return: -114.65 | Steps: 20000
+
+************************************************************
+SUCCESS! Threshold reached at episode 118
+Average reward over last 100 episodes: -195.53
+************************************************************
+Model saved to: models\DDQNAgent\Pendulum-v1.pth
+Uploading model to wandb...
+Model uploaded successfully
+
+Finalizing wandb run...

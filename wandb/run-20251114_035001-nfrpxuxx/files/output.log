@@ -1,0 +1,5 @@
+  [ 50] Avg: -149.42 | Loss: 0.1301 | Eps: 0.033
+  [100] Avg: -118.64 | Loss: 0.0541 | Eps: 0.011
+
+  SUCCESS at episode 108 | Avg100: -109.98
+  Model saved: models\DDQNAgent\MountainCar-v0.pth

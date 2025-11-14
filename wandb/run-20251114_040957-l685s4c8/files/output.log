@@ -1,0 +1,6 @@
+  [ 50] Avg: -190.16 | Loss: 0.1758 | Eps: 0.032
+  [100] Avg: -155.86 | Loss: 0.3966 | Eps: 0.012
+  [150] Avg: -112.32 | Loss: 0.5644 | Eps: 0.010
+
+  SUCCESS at episode 182 | Avg100: -99.55
+  Model saved: models\DDQNAgent\Acrobot-v1.pth

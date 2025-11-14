@@ -1,0 +1,17 @@
+Wandb initialized. Starting training loop...
+
+Episode 50/500 | Avg100: 45.50 | Return: 365.00 | Loss: 0.0920 | Epsilon: 0.327 | Avg Time: 0.20s | Steps: 2275
+Episode 100/500 | Avg100: 71.75 | Return: 166.00 | Loss: 0.0697 | Epsilon: 0.037 | Avg Time: 0.33s | Steps: 7175
+Episode 150/500 | Avg100: 112.17 | Return: 63.00 | Loss: 0.0752 | Epsilon: 0.011 | Avg Time: 0.51s | Steps: 13492
+Episode 200/500 | Avg100: 123.11 | Return: 29.00 | Loss: 0.0521 | Epsilon: 0.010 | Avg Time: 0.56s | Steps: 19486
+Episode 250/500 | Avg100: 124.71 | Return: 22.00 | Loss: 0.0675 | Epsilon: 0.010 | Avg Time: 0.58s | Steps: 25963
+Episode 300/500 | Avg100: 125.65 | Return: 189.00 | Loss: 0.0666 | Epsilon: 0.010 | Avg Time: 0.55s | Steps: 32051
+Episode 350/500 | Avg100: 128.75 | Return: 170.00 | Loss: 0.0623 | Epsilon: 0.010 | Avg Time: 0.53s | Steps: 38838
+Episode 400/500 | Avg100: 123.86 | Return: 95.00 | Loss: 0.0759 | Epsilon: 0.010 | Avg Time: 0.52s | Steps: 44437
+Episode 450/500 | Avg100: 109.87 | Return: 96.00 | Loss: 0.0608 | Epsilon: 0.010 | Avg Time: 0.46s | Steps: 49825
+Episode 500/500 | Avg100: 119.01 | Return: 132.00 | Loss: 0.0706 | Epsilon: 0.010 | Avg Time: 0.51s | Steps: 56338
+
+Training completed without reaching success threshold
+Final avg100: 119.01
+
+Finalizing wandb run...

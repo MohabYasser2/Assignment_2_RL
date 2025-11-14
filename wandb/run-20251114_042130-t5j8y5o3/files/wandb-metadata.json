@@ -1,0 +1,36 @@
+{
+  "os": "Windows-10-10.0.19045-SP0",
+  "python": "CPython 3.13.1",
+  "startedAt": "2025-11-14T02:21:30.932400Z",
+  "program": "c:\\Users\\mohab\\Desktop\\M\\test.py",
+  "codePath": "test.py",
+  "codePathLocal": "test.py",
+  "email": "mohabhelp@gmail.com",
+  "root": "c:\\Users\\mohab\\Desktop\\M",
+  "host": "DESKTOP-FT5AR5G",
+  "executable": "C:\\Python313\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce RTX 2070",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "999594913792",
+      "used": "785450815488"
+    }
+  },
+  "memory": {
+    "total": "17110953984"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 2070",
+      "memoryTotal": "8589934592",
+      "cudaCores": 2304,
+      "architecture": "Turing",
+      "uuid": "GPU-dc3d745a-e1ef-e5ad-255b-8fdfc7057585"
+    }
+  ],
+  "cudaVersion": "12.9",
+  "writerId": "nml9q3vyw1xyri0nisllszjravigo1pv"
+}

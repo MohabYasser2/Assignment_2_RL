@@ -1,0 +1,17 @@
+Wandb initialized. Starting training loop...
+
+Episode 50/500 | Avg100: 31.90 | Return: 27.00 | Steps: 1595
+Episode 100/500 | Avg100: 118.22 | Return: 167.00 | Steps: 11822
+Episode 150/500 | Avg100: 187.13 | Return: 304.00 | Steps: 20308
+Episode 200/500 | Avg100: 307.67 | Return: 500.00 | Steps: 42589
+Episode 250/500 | Avg100: 462.33 | Return: 500.00 | Steps: 66541
+
+************************************************************
+SUCCESS! Threshold reached at episode 254
+Average reward over last 100 episodes: 475.01
+************************************************************
+Model saved to: models\DDQNAgent\CartPole-v1.pth
+Uploading model to wandb...
+Model uploaded successfully
+
+Finalizing wandb run...
