@@ -24,7 +24,7 @@ from dqn_agent import DQNAgent
 from ddqn_agent import DDQNAgent
 
 # Weights & Biases project name
-PROJECT = "cmps458_assignment2"
+PROJECT = "RL_ASSIGNMENT2"
 
 # ============================================================================
 # ENVIRONMENT CREATION
@@ -59,7 +59,7 @@ def train_one(env_id, AgentClass, log_file):
         log_file (file): File handle for logging
         
     Returns:
-        tuple: (success, episodes_trained, avg100, model_path)
+        tuple: (success, episodes_trained, mean_reward_100, model_path)
     """
     # Display training banner
     print(f"\n{'='*60}")
@@ -163,7 +163,7 @@ def train_one(env_id, AgentClass, log_file):
         episode_duration = (datetime.now() - episode_start_time).total_seconds()
         last100.append(ep_return)
         last100_times.append(episode_duration)
-        avg100 = float(np.mean(last100))
+        mean_reward_100 = float(np.mean(last100))
         avg_episode_time = float(np.mean(last100_times))
         avg_loss = float(np.mean(ep_losses)) if len(ep_losses) > 0 else 0.0
         current_epsilon = agent.eps_threshold()
@@ -185,7 +185,7 @@ def train_one(env_id, AgentClass, log_file):
             
             # Performance Metrics
             "Performance/Episode_Return": ep_return,
-            "Performance/Avg_Return_100": avg100,
+            "Performance/Avg_Return_100": mean_reward_100,
             "Performance/Best_Return_100": max(last100) if len(last100) > 0 else ep_return,
             
             # Learning Metrics
@@ -211,14 +211,14 @@ def train_one(env_id, AgentClass, log_file):
         if ep % 50 == 0:
             q_range = q_max - q_min
             collapse_warning = " [WARNING: Q-collapse!]" if q_std < 0.1 else ""
-            print(f"  [{ep:3d}] Avg: {avg100:6.2f} | Loss: {avg_loss:.4f} | Eps: {current_epsilon:.3f} | Q_std: {q_std:.3f}{collapse_warning}")
-            log_file.write(f"[{AgentClass.__name__} | {env_id}] ep={ep} avg100={avg100:.2f} loss={avg_loss:.4f} epsilon={current_epsilon:.3f} q_std={q_std:.3f}\n")
+            print(f"  [{ep:3d}] Avg: {mean_reward_100:6.2f} | Loss: {avg_loss:.4f} | Eps: {current_epsilon:.3f} | Q_std: {q_std:.3f}{collapse_warning}")
+            log_file.write(f"[{AgentClass.__name__} | {env_id}] ep={ep} mean_reward_100={mean_reward_100:.2f} loss={avg_loss:.4f} epsilon={current_epsilon:.3f} q_std={q_std:.3f}\n")
             log_file.flush()
         
         # Check for success (threshold reached)
-        if len(last100) == 100 and avg100 > threshold:
+        if len(last100) == 100 and mean_reward_100 > threshold:
             success = True
-            print(f"\n  SUCCESS at episode {ep} | Avg100: {avg100:.2f}")
+            print(f"\n  SUCCESS at episode {ep} | Mean Reward (last 100): {mean_reward_100:.2f}")
             
             # Save model
             save_dir = os.path.join("models", AgentClass.__name__)
@@ -238,7 +238,7 @@ def train_one(env_id, AgentClass, log_file):
     # Update wandb summary
     wandb.summary['success'] = success
     wandb.summary['episodes_trained'] = episodes_trained
-    wandb.summary['avg100'] = float(np.mean(last100)) if len(last100) > 0 else None
+    wandb.summary['mean_reward_100'] = float(np.mean(last100)) if len(last100) > 0 else None
     
     # Upload model to wandb if successful
     if model_path is not None:
@@ -247,7 +247,7 @@ def train_one(env_id, AgentClass, log_file):
         wandb_model_path = os.path.join(wandb_model_dir, os.path.basename(model_path))
         shutil.copy2(model_path, wandb_model_path)
     else:
-        print(f"  FAILED | Final Avg100: {float(np.mean(last100)) if len(last100) > 0 else 'N/A'}")
+        print(f"  FAILED | Final Mean Reward (last 100): {float(np.mean(last100)) if len(last100) > 0 else 'N/A'}")
     
     # Cleanup
     run.finish()
@@ -273,20 +273,20 @@ def train_all(log_file):
     results = []
     for AgentClass in [DQNAgent, DDQNAgent]:
         for env_id in CONFIG.keys():
-            success, episodes, avg100, model_path = train_one(env_id, AgentClass, log_file)
+            success, episodes, mean_reward_100, model_path = train_one(env_id, AgentClass, log_file)
             results.append({
                 "agent": AgentClass.__name__,
                 "env": env_id,
                 "success": success,
                 "episodes_trained": episodes,
-                "avg100": avg100,
+                "mean_reward_100": mean_reward_100,
                 "model_path": model_path
             })
-            log_file.write(f"{AgentClass.__name__} on {env_id}: success={success}, episodes={episodes}, avg100={avg100}, model_path={model_path}\n")
+            log_file.write(f"{AgentClass.__name__} on {env_id}: success={success}, episodes={episodes}, mean_reward_100={mean_reward_100}, model_path={model_path}\n")
             log_file.flush()
     log_file.write("\nFinal Training Summary:\n")
     for r in results:
-        log_file.write(f"{r['agent']} on {r['env']}: success={r['success']}, episodes={r['episodes_trained']}, avg100={r['avg100']}, model_path={r['model_path']}\n")
+        log_file.write(f"{r['agent']} on {r['env']}: success={r['success']}, episodes={r['episodes_trained']}, mean_reward_100={r['mean_reward_100']}, model_path={r['model_path']}\n")
     log_file.flush()
 
 # ============================================================================
@@ -307,16 +307,16 @@ if __name__ == "__main__":
         results = []
         for AgentClass in [DQNAgent, DDQNAgent]:
             for env_id in CONFIG.keys():
-                success, episodes, avg100, model_path = train_one(env_id, AgentClass, log_file)
+                success, episodes, mean_reward_100, model_path = train_one(env_id, AgentClass, log_file)
                 results.append({
                     "agent": AgentClass.__name__,
                     "env": env_id,
                     "success": success,
                     "episodes_trained": episodes,
-                    "avg100": avg100,
+                    "mean_reward_100": mean_reward_100,
                     "model_path": model_path
                 })
-                log_file.write(f"{AgentClass.__name__} on {env_id}: success={success}, episodes={episodes}, avg100={avg100}, model_path={model_path}\n")
+                log_file.write(f"{AgentClass.__name__} on {env_id}: success={success}, episodes={episodes}, mean_reward_100={mean_reward_100}, model_path={model_path}\n")
                 log_file.flush()
         
         # Training pipeline completion
@@ -329,14 +329,14 @@ if __name__ == "__main__":
         print(f"{'='*60}")
         for r in results:
             status = "SUCCESS" if r['success'] else "FAILED "
-            print(f"  [{status}] {r['agent']:10s} | {r['env']:15s} | Avg100: {r['avg100']:6.2f} | Ep: {r['episodes_trained']:3d}")
+            print(f"  [{status}] {r['agent']:10s} | {r['env']:15s} | Mean Reward: {r['mean_reward_100']:6.2f} | Ep: {r['episodes_trained']:3d}")
         print(f"  Duration: {duration}")
         print(f"{'='*60}\n")
         
         # Write summary to log file
         log_file.write("\nFinal Training Summary:\n")
         for r in results:
-            log_file.write(f"{r['agent']} on {r['env']}: success={r['success']}, episodes={r['episodes_trained']}, avg100={r['avg100']}, model_path={r['model_path']}\n")
+            log_file.write(f"{r['agent']} on {r['env']}: success={r['success']}, episodes={r['episodes_trained']}, mean_reward_100={r['mean_reward_100']}, model_path={r['model_path']}\n")
         log_file.write(f"\nTraining completed at {end_time}\n")
         log_file.write(f"Total duration: {duration}\n")
         log_file.flush()
